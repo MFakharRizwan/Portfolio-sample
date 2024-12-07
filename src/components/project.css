@@ -1,6 +1,6 @@
 .projects {
     padding: 3rem;
-    background-color: #f9f9f9;
+    background-image: linear-gradient(to bottom, #ffffff, #f3f4fa, #e3ebf6, #d1e2f1, #bcdae9, #b6d7e5, #b0d5e0, #aad2db, #b2d4db, #b9d5dc, #c1d7dc, #c8d8dc);
     text-align: center;
   }
   
