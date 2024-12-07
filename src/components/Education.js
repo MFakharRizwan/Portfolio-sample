@@ -9,7 +9,7 @@ const Education = () => {
       institution: "Shaheed Zulfikar Ali Bhutto Institute of Science and Technology.",
     },
     {
-      year: "2018-2019",
+      year: "2017-2019",
       degree: "Higher Secondary School Certificate (ICS)",
       institution: "Islamabad Model College For Boys H-9 Islamabad.",
     },
