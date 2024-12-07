@@ -49,7 +49,14 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="footer-bottom">
-        <p>&copy; 2025 Syed Muhammad Fakhar Rizwan. All Rights Reserved.</p>
+        <p>&copy; 2025 <a
+              href="mfakhar910@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Gmail"
+            >
+              <i className="fas fa-envelope"> Syed Muhammad Fakhar Rizwan.</i>
+            </a> All Rights Reserved.</p>
       </div>
     </footer>
   );
