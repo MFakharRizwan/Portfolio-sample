@@ -7,7 +7,7 @@ const ExperiencePortfolio = () => {
       year: "August 2023 - March 2024",
       title: "Frontend Developer",
       description:
-        "RainyDayLab Technologies. Spearheaded the development of responsive and dynamic web applications using React.js and modern JavaScript frameworks. Optimized web performance, achieving a 25% improvement in page load times by implementing best practices in coding and asset management. Designed and integrated reusable UI components to enhance development efficiency and maintain a consistent design system across projects.",
+        "RainyDayLab Technologies. Led the development of highly responsive and dynamic web applications utilizing React.js and modern JavaScript frameworks. Streamlined web performance, achieving significant improvements in page load times by employing advanced coding practices and efficient asset management strategies. Designed and implemented reusable, scalable UI components to accelerate development workflows while maintaining a cohesive and consistent design system across projects.",
     },
     {
       year: "June 2023 - July 2023",
