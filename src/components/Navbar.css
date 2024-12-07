@@ -7,6 +7,7 @@
   z-index: 1000;
   margin: 0 auto; /* Center the navbar */
   border-radius: 0px; /* Optional: Add some style */
+  cursor: pointer;
 }
 
 .navbar-container {
