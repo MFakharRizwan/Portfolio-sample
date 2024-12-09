@@ -13,7 +13,7 @@ const Contact = () => {
         </p>
         <a
           href="/resumemy.pdf" // Path to your CV file in the public folder
-          download="resumemy.pdf" // Suggested download name
+          download="resume.pdf" // Suggested download name
           className="download-btn"
         >
           Download Resume
