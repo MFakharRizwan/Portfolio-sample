@@ -12,7 +12,7 @@ const Contact = () => {
           reach out for any questions or opportunities.
         </p>
         <a
-          href="/resumemy.pdf" // Path to your CV file in the public folder
+          href="/resume.pdf" // Path to your CV file in the public folder
           download="resume.pdf" // Suggested download name
           className="download-btn"
         >
@@ -23,7 +23,7 @@ const Contact = () => {
       {/* Right Side: Resume Viewer */}
       <div className="resume-right">
         <object
-          data="/resumemy.pdf"
+          data="/resume.pdf"
           type="application/pdf"
           width="100%"
           height="600px"
