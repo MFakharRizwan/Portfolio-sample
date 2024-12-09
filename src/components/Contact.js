@@ -31,7 +31,7 @@ const Contact = () => {
         >
           <p>
             Your browser does not support viewing PDFs. You can download the resume{" "}
-            <a href="/resumemy.pdf" download="resumemy.pdf">
+            <a href="/resume.pdf" download="resume.pdf">
               here
             </a>.
           </p>
