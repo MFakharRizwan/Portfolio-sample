@@ -50,10 +50,10 @@ const Footer = () => {
       {/* Footer Bottom */}
       <div className="footer-bottom">
         <p>&copy; 2025 <a
-              href="https://linktr.ee/syedfakhar"
+              href="https://linktr.ee/Syed_M_Fakhar"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Gmail"
+              aria-label="linktree"
             >
               <i className="fas fa-envelope"> Syed Muhammad Fakhar Rizwan.</i>
             </a> All Rights Reserved.</p>
