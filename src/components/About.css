@@ -125,7 +125,7 @@
     padding: 20px; /* Extra padding for smaller screens */
     height: auto; /* Allow content to flow */
     flex-direction: column; /* Stack content vertically on small screens */
-    align-items: flex-start;
+    align-items: center; /* Align center content */
   }
 
   /* Align Left Floating Tags to the Left */
@@ -199,7 +199,7 @@
   .about-tag:nth-child(1), 
   .about-tag:nth-child(2), 
   .about-tag:nth-child(3) {
-    left: 2%; /* Move the left tags further from the edges */
+    left: 0%; /* Move the left tags closer */
     right: auto; /* Disable any right alignment */
     top: auto; /* Reset positioning */
   }
@@ -207,7 +207,7 @@
   .about-tag:nth-child(4), 
   .about-tag:nth-child(5), 
   .about-tag:nth-child(6) {
-    right: 2%; /* Move the right tags further from the edges */
+    right: 0%; /* Move the right tags closer */
     left: auto; /* Disable any left alignment */
     top: auto; /* Reset positioning */
   }
@@ -276,6 +276,7 @@
     font-size: 0.7rem;
   }
 }
+
 
 
   
