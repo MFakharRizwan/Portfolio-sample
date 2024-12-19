@@ -4,10 +4,9 @@ footer {
   color: white;
   padding: 30px 20px;
   font-family: 'Arial', sans-serif;
-  position: sticky; /* Sticky positioning */
   width: 100%;
   bottom: 0;
-  margin-top: auto; /* Pushes footer to the end of the page */
+  margin-top: 10%; /* Pushes footer to the end of the page */
 }
 
 /* Body and HTML should fill the screen */
