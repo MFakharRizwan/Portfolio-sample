@@ -1,130 +1,125 @@
 /* General Footer Styles */
 footer {
-  background-color: #0e1b2f;
-  color: white;
-  padding: 30px 20px;
-  font-family: 'Arial', sans-serif;
-  width: 100%;
-  bottom: 0; /* Pushes footer to the end of the page */
-}
-
-
-/* Footer Container */
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.footer-section {
-  flex: 1;
-  min-width: 250px;
-}
-
-.footer-section.about h3 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-
-.footer-section.about p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  color: #d4d4d4;
-}
-
-/* Social Media Icons */
-.footer-section.social h4 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: flex-start;
-  gap: 15px;
-}
-
-.social-icons a {
-  font-size: 1.5rem;
-  color: #ffffff;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #ff7f50;
-}
-
-/* Footer Bottom */
-.footer-bottom {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 0.9rem;
-  color: #b0b0b0;
-}
-
-.footer-bottom i {
-  font-size: 19px;
-  color: #b0b0b0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .footer-container {
-    justify-content: center;
-    text-align: center;
+    background-color: #0e1b2f;
+    color: white;
+    padding: 30px 20px;
+    font-family: 'Arial', sans-serif;
   }
-
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
   .footer-section {
-    flex: 1 1 100%;
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .footer-section.about h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section.about p {
+    font-size: 1rem;
+    line-height: 1.6;
     margin-bottom: 20px;
+    color: #d4d4d4;
   }
 
-  .social-icons {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-section.about h3 {
+  .footer-bottom i{
+    font-size: 19px;
+    color: #b0b0b0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  } 
+  
+  /* Social Media Icons */
+  .footer-section.social h4 {
     font-size: 1.5rem;
+    margin-bottom: 15px;
   }
-
-  .footer-section.about p {
-    font-size: 0.9rem;
+  
+  .social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
   }
-
+  
   .social-icons a {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    transition: color 0.3s ease;
   }
-}
-
-@media (max-width: 480px) {
-  .footer-section.about h3 {
-    font-size: 1.3rem;
+  
+  .social-icons a:hover {
+    color: #ff7f50;
   }
-
-  .footer-section.about p {
-    font-size: 0.85rem;
-  }
-
-  .social-icons a {
-    font-size: 1.1rem;
-  }
-
+  
+  /* Footer Bottom */
   .footer-bottom {
-    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #b0b0b0;
   }
-}
-
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .footer-container {
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .footer-section {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section.about h3 {
+      font-size: 1.5rem;
+    }
+  
+    .footer-section.about p {
+      font-size: 0.9rem;
+    }
+  
+    .social-icons a {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-section.about h3 {
+      font-size: 1.3rem;
+    }
+  
+    .footer-section.about p {
+      font-size: 0.85rem;
+    }
+  
+    .social-icons a {
+      font-size: 1.1rem;
+    }
+  
+    .footer-bottom {
+      font-size: 0.8rem;
+    }
+  }
 
