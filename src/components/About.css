@@ -11,12 +11,12 @@
   opacity: 0; /* Initially hidden */
   transform: translateY(-50px); /* Start off above the screen */
   transition: all 1s ease-out;
-  padding: 0 20px; /* Added padding for smaller screens */
+  padding: 0 20px;
 }
 
 .about-container.animate-in {
-  opacity: 1; /* Fully visible */
-  transform: translateY(0); /* Move to original position */
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Floating Tags */
@@ -38,11 +38,23 @@
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* Floating Tag Alignment */
+.about-tag.left {
+  left: 5%;
+  text-align: left;
+}
+
+.about-tag.right {
+  right: 5%;
+  text-align: right;
+}
+
 /* Center Content */
 .about-content {
   max-width: 700px;
   text-align: center;
   padding: 0 20px;
+  z-index: 1; /* Ensure it stays above floating tags */
 }
 
 .hello-text {
@@ -58,6 +70,7 @@
   line-height: 1.4;
   color: #f8f9fa;
   margin-bottom: 20px;
+  word-break: break-word; /* Ensure long text wraps properly */
 }
 
 .description {
@@ -68,214 +81,52 @@
 }
 
 /* Responsive Styles */
-
-/* Large Desktop & Laptop (min-width: 1280px) */
-@media (min-width: 1280px) {
-  .about-container {
-    padding: 0 40px; /* Add more padding on large screens */
-    height: 100vh; /* Full viewport height for large screens */
-  }
-
-  .about-tag {
-    font-size: 1rem; /* Larger tags */
-    padding: 12px 22px;
-  }
-
-  .heading {
-    font-size: 2.2rem; /* Larger heading */
-  }
-
-  .hello-text {
-    font-size: 1.3rem;
-  }
-
-  .description {
-    font-size: 1.1rem;
-  }
-}
-
-/* Tablet & Small Laptop (max-width: 1024px) */
-@media (max-width: 1024px) {
-  .about-container {
-    height: auto; /* Allow content to flow on smaller screens */
-    padding: 20px 30px; /* Adjust padding for tablets */
-  }
-
-  .about-tag {
-    font-size: 0.9rem; /* Slightly smaller font size on tablets */
-    padding: 10px 18px;
-  }
-
-  .heading {
-    font-size: 1.9rem; /* Smaller heading on tablets */
-  }
-
-  .hello-text {
-    font-size: 1.1rem;
-  }
-
-  .description {
-    font-size: 1rem;
-  }
-}
-
-/* Mobile Landscape & Portrait (max-width: 768px) */
 @media (max-width: 768px) {
   .about-container {
-    padding: 20px; /* Extra padding for smaller screens */
-    height: auto; /* Allow content to flow */
-    flex-direction: column; /* Stack content vertically on small screens */
-    align-items: center; /* Align center content */
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
   }
 
-  /* Align Left Floating Tags to the Left */
-  .about-tag:nth-child(1), 
-  .about-tag:nth-child(2), 
-  .about-tag:nth-child(3) {
-    left: 5%; /* Align left tags to the left side */
-    right: auto; /* Disable any right alignment */
-    top: auto; /* Reset positioning */
+  .about-tag {
+    font-size: 0.8rem;
+    padding: 8px 14px;
   }
 
-  /* Align Right Floating Tags to the Right */
-  .about-tag:nth-child(4), 
-  .about-tag:nth-child(5), 
-  .about-tag:nth-child(6) {
-    right: 5%; /* Align right tags to the right side */
-    left: auto; /* Disable any left alignment */
-    top: auto; /* Reset positioning */
+  .about-tag.left {
+    left: 2%;
+  }
+
+  .about-tag.right {
+    right: 2%;
   }
 
   .about-content {
-    max-width: 100%; /* Full width for content */
-    margin-top: 30px; /* Add space between tags and content */
-    text-align: center; /* Center content text */
+    max-width: 100%;
+    margin-top: 20px;
+    text-align: center;
   }
 
   .heading {
-    font-size: 1.1rem; /* Smaller heading on mobile */
-  }
-
-  .hello-text {
-    font-size: 1rem;
-  }
-
-  .description {
-    font-size: 0.95rem;
+    font-size: 1.5rem;
   }
 }
 
-/* Small Mobile Devices (max-width: 480px) */
 @media (max-width: 480px) {
   .about-tag {
-    font-size: 0.7rem; /* Further reduce font size on very small screens */
+    font-size: 0.7rem;
     padding: 6px 12px;
   }
 
-  .about-content {
-    padding: 0 10px; /* Less padding on very small screens */
-  }
-
   .heading {
-    font-size: 0.8rem; /* Reduce heading size even more */
+    font-size: 1.2rem;
   }
 
-  .hello-text {
+  .description {
     font-size: 0.9rem;
   }
-
-  .description {
-    font-size: 0.85rem;
-  }
 }
 
-/* For very small screens (max-width: 420px) */
-@media (max-width: 420px) {
-  .about-container {
-    padding: 10px; /* Less padding for very small screens */
-  }
-
-  /* Floating tags: Left-side and right-side positioning */
-  .about-tag:nth-child(1), 
-  .about-tag:nth-child(2), 
-  .about-tag:nth-child(3) {
-    left: 0%; /* Move the left tags closer */
-    right: auto; /* Disable any right alignment */
-    top: auto; /* Reset positioning */
-  }
-
-  .about-tag:nth-child(4), 
-  .about-tag:nth-child(5), 
-  .about-tag:nth-child(6) {
-    right: 0%; /* Move the right tags closer */
-    left: auto; /* Disable any left alignment */
-    top: auto; /* Reset positioning */
-  }
-
-  .about-content {
-    max-width: 100%; /* Full width for content */
-    margin-top: 40px; /* Ensure there's enough space between tags and content */
-    text-align: center; /* Center content text */
-  }
-
-  .heading {
-    font-size: 0.7rem; /* Reduce heading size even more */
-  }
-
-  .hello-text {
-    font-size: 0.8rem;
-  }
-
-  .description {
-    font-size: 0.8rem;
-  }
-}
-
-/* For extra small screens (max-width: 380px) */
-@media (max-width: 380px) {
-  .about-container {
-    padding: 8px; /* Reduce padding even more */
-  }
-
-  /* Floating tags: Left-side and right-side positioning */
-  .about-tag:nth-child(1), 
-  .about-tag:nth-child(2), 
-  .about-tag:nth-child(3) {
-    left: 0; /* Further reduce the left position */
-    right: auto; /* Disable any right alignment */
-    top: auto; /* Reset positioning */
-    font-size: 0.6rem; /* Further reduce font size */
-    padding: 5px 10px; /* Reduce padding */
-  }
-
-  .about-tag:nth-child(4), 
-  .about-tag:nth-child(5), 
-  .about-tag:nth-child(6) {
-    right: 0; /* Further reduce the right position */
-    left: auto; /* Disable any left alignment */
-    top: auto; /* Reset positioning */
-    font-size: 0.6rem; /* Further reduce font size */
-    padding: 5px 10px; /* Reduce padding */
-  }
-
-  .about-content {
-    max-width: 100%; /* Full width for content */
-    margin-top: 50px; /* Ensure enough space between tags and content */
-    text-align: center; /* Center content text */
-  }
-
-  .heading {
-    font-size: 0.5rem; /* Reduce heading size even more */
-  }
-
-  .hello-text {
-    font-size: 0.75rem;
-  }
-
-  .description {
-    font-size: 0.7rem;
-  }
-}
 
 
 
