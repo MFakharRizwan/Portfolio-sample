@@ -11,7 +11,7 @@ const About = () => {
         const [entry] = entries;
         setInView(entry.isIntersecting);
       },
-      { threshold: 0.5 } // Trigger when 50% of the component is in view
+      { threshold: 0.5 }
     );
 
     if (aboutRef.current) {
@@ -32,13 +32,13 @@ const About = () => {
       id="about"
     >
       {/* Left Floating Tags */}
-      <div className="about-tag" style={{ top: "30%", left: "5%" }}>
+      <div className="about-tag left" style={{ top: "30%" }}>
         Programming
       </div>
-      <div className="about-tag" style={{ top: "42%", left: "3%" }}>
+      <div className="about-tag left" style={{ top: "42%" }}>
         ReactJS
       </div>
-      <div className="about-tag" style={{ top: "55%", left: "4%" }}>
+      <div className="about-tag left" style={{ top: "55%" }}>
         React Native
       </div>
 
@@ -59,13 +59,13 @@ const About = () => {
       </div>
 
       {/* Right Floating Tags */}
-      <div className="about-tag" style={{ top: "30%", right: "5%" }}>
-      Web Development
+      <div className="about-tag right" style={{ top: "30%" }}>
+        Web Development
       </div>
-      <div className="about-tag" style={{ top: "45%", right: "3%" }}>
+      <div className="about-tag right" style={{ top: "45%" }}>
         Expo
       </div>
-      <div className="about-tag" style={{ top: "60%", right: "4%" }}>
+      <div className="about-tag right" style={{ top: "60%" }}>
         Story Books
       </div>
     </div>
@@ -73,5 +73,6 @@ const About = () => {
 };
 
 export default About;
+
 
 
