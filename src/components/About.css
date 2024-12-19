@@ -124,15 +124,32 @@
   .about-container {
     padding: 20px; /* Extra padding for smaller screens */
     height: auto; /* Allow content to flow */
+    flex-direction: column; /* Stack content vertically on small screens */
+    align-items: flex-start;
   }
 
-  .about-tag {
-    font-size: 0.8rem; /* Smaller font size on mobile */
-    padding: 8px 15px;
+  /* Align Left Floating Tags to the Left */
+  .about-tag:nth-child(1), 
+  .about-tag:nth-child(2), 
+  .about-tag:nth-child(3) {
+    left: 5%; /* Align left tags to the left side */
+    right: auto; /* Disable any right alignment */
+    top: auto; /* Reset positioning */
+  }
+
+  /* Align Right Floating Tags to the Right */
+  .about-tag:nth-child(4), 
+  .about-tag:nth-child(5), 
+  .about-tag:nth-child(6) {
+    right: 5%; /* Align right tags to the right side */
+    left: auto; /* Disable any left alignment */
+    top: auto; /* Reset positioning */
   }
 
   .about-content {
     max-width: 100%; /* Full width for content */
+    margin-top: 30px; /* Add space between tags and content */
+    text-align: center; /* Center content text */
   }
 
   .heading {
