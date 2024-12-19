@@ -1,3 +1,4 @@
+/* General Container Styling */
 .about-container {
   position: relative;
   height: 100vh;
@@ -18,6 +19,7 @@
   transform: translateY(0); /* Move to original position */
 }
 
+/* Floating Tags */
 .about-tag {
   position: absolute;
   background: rgb(72, 65, 65);
@@ -36,6 +38,7 @@
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* Center Content */
 .about-content {
   max-width: 700px;
   text-align: center;
@@ -65,18 +68,46 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 1024px) {
+
+/* Large Desktop & Laptop (min-width: 1280px) */
+@media (min-width: 1280px) {
   .about-container {
-    height: auto; /* Allow content to flow on smaller screens */
+    padding: 0 40px; /* Add more padding on large screens */
+    height: 100vh; /* Full viewport height for large screens */
   }
 
   .about-tag {
-    font-size: 0.8rem; /* Slightly smaller font size on tablets */
-    padding: 8px 16px;
+    font-size: 1rem; /* Larger tags */
+    padding: 12px 22px;
   }
 
   .heading {
-    font-size: 1.8rem; /* Smaller heading on tablets */
+    font-size: 2.2rem; /* Larger heading */
+  }
+
+  .hello-text {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablet & Small Laptop (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .about-container {
+    height: auto; /* Allow content to flow on smaller screens */
+    padding: 20px 30px; /* Adjust padding for tablets */
+  }
+
+  .about-tag {
+    font-size: 0.9rem; /* Slightly smaller font size on tablets */
+    padding: 10px 18px;
+  }
+
+  .heading {
+    font-size: 1.9rem; /* Smaller heading on tablets */
   }
 
   .hello-text {
@@ -84,10 +115,11 @@
   }
 
   .description {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 }
 
+/* Mobile Landscape & Portrait (max-width: 768px) */
 @media (max-width: 768px) {
   .about-container {
     padding: 20px; /* Extra padding for smaller screens */
@@ -95,8 +127,8 @@
   }
 
   .about-tag {
-    font-size: 0.7rem; /* Smaller font size on mobile */
-    padding: 6px 12px;
+    font-size: 0.8rem; /* Smaller font size on mobile */
+    padding: 8px 15px;
   }
 
   .about-content {
@@ -104,7 +136,7 @@
   }
 
   .heading {
-    font-size: 1.5rem; /* Smaller heading on mobile */
+    font-size: 1.6rem; /* Smaller heading on mobile */
   }
 
   .hello-text {
@@ -112,14 +144,15 @@
   }
 
   .description {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 }
 
+/* Small Mobile Devices (max-width: 480px) */
 @media (max-width: 480px) {
   .about-tag {
-    font-size: 0.6rem; /* Further reduce font size on very small screens */
-    padding: 5px 10px;
+    font-size: 0.7rem; /* Further reduce font size on very small screens */
+    padding: 6px 12px;
   }
 
   .about-content {
@@ -127,7 +160,7 @@
   }
 
   .heading {
-    font-size: 1.3rem; /* Reduce heading size even more */
+    font-size: 1.4rem; /* Reduce heading size even more */
   }
 
   .hello-text {
@@ -138,5 +171,6 @@
     font-size: 0.85rem;
   }
 }
+
 
   
