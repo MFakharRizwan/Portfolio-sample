@@ -189,5 +189,93 @@
   }
 }
 
+/* For very small screens (max-width: 420px) */
+@media (max-width: 420px) {
+  .about-container {
+    padding: 10px; /* Less padding for very small screens */
+  }
+
+  /* Floating tags: Left-side and right-side positioning */
+  .about-tag:nth-child(1), 
+  .about-tag:nth-child(2), 
+  .about-tag:nth-child(3) {
+    left: 2%; /* Move the left tags further from the edges */
+    right: auto; /* Disable any right alignment */
+    top: auto; /* Reset positioning */
+  }
+
+  .about-tag:nth-child(4), 
+  .about-tag:nth-child(5), 
+  .about-tag:nth-child(6) {
+    right: 2%; /* Move the right tags further from the edges */
+    left: auto; /* Disable any left alignment */
+    top: auto; /* Reset positioning */
+  }
+
+  .about-content {
+    max-width: 100%; /* Full width for content */
+    margin-top: 40px; /* Ensure there's enough space between tags and content */
+    text-align: center; /* Center content text */
+  }
+
+  .heading {
+    font-size: 1.3rem; /* Reduce heading size even more */
+  }
+
+  .hello-text {
+    font-size: 0.8rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+}
+
+/* For extra small screens (max-width: 380px) */
+@media (max-width: 380px) {
+  .about-container {
+    padding: 8px; /* Reduce padding even more */
+  }
+
+  /* Floating tags: Left-side and right-side positioning */
+  .about-tag:nth-child(1), 
+  .about-tag:nth-child(2), 
+  .about-tag:nth-child(3) {
+    left: 0; /* Further reduce the left position */
+    right: auto; /* Disable any right alignment */
+    top: auto; /* Reset positioning */
+    font-size: 0.6rem; /* Further reduce font size */
+    padding: 5px 10px; /* Reduce padding */
+  }
+
+  .about-tag:nth-child(4), 
+  .about-tag:nth-child(5), 
+  .about-tag:nth-child(6) {
+    right: 0; /* Further reduce the right position */
+    left: auto; /* Disable any left alignment */
+    top: auto; /* Reset positioning */
+    font-size: 0.6rem; /* Further reduce font size */
+    padding: 5px 10px; /* Reduce padding */
+  }
+
+  .about-content {
+    max-width: 100%; /* Full width for content */
+    margin-top: 50px; /* Ensure enough space between tags and content */
+    text-align: center; /* Center content text */
+  }
+
+  .heading {
+    font-size: 1.2rem; /* Reduce heading size even more */
+  }
+
+  .hello-text {
+    font-size: 0.75rem;
+  }
+
+  .description {
+    font-size: 0.7rem;
+  }
+}
+
 
   
