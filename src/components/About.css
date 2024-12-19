@@ -126,6 +126,79 @@
     font-size: 0.9rem;
   }
 }
+/* For screens 420px and below */
+@media (max-width: 420px) {
+  .about-container {
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-tag {
+    font-size: 0.65rem;
+    padding: 6px 10px;
+  }
+
+  .about-tag.left {
+    left: 2%;
+  }
+
+  .about-tag.right {
+    right: 2%;
+  }
+
+  .about-content {
+    margin-top: 15px;
+    text-align: center;
+    max-width: 95%;
+  }
+
+  .heading {
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+}
+
+/* For screens 380px and below */
+@media (max-width: 380px) {
+  .about-container {
+    padding: 10px;
+  }
+
+  .about-tag {
+    font-size: 0.6rem;
+    padding: 5px 8px;
+  }
+
+  .about-tag.left {
+    left: 1%;
+  }
+
+  .about-tag.right {
+    right: 1%;
+  }
+
+  .about-content {
+    margin-top: 10px;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+
+  .description {
+    font-size: 0.85rem;
+  }
+}
+
 
 
 
