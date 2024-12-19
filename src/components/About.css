@@ -1,78 +1,142 @@
-.about {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
-    background-image: linear-gradient(to right bottom, #7a767f, #766d81, #716484, #6c5a86, #675188, #61467a, #5b3b6d, #55305f, #462442, #33192a, #1e1017, #000000);
-    color: #f8f9fa; /* Light text color */
+.about-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #7a767f, #675188);
+  overflow: hidden;
+  color: #f8f9fa;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(-50px); /* Start off above the screen */
+  transition: all 1s ease-out;
+  padding: 0 20px; /* Added padding for smaller screens */
+}
+
+.about-container.animate-in {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Move to original position */
+}
+
+.about-tag {
+  position: absolute;
+  background: rgb(72, 65, 65);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 18px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.about-tag:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.about-content {
+  max-width: 700px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hello-text {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  color: #d8e900;
+  margin-bottom: 10px;
+}
+
+.heading {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  line-height: 1.4;
+  color: #f8f9fa;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #f1f1f1;
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .about-container {
+    height: auto; /* Allow content to flow on smaller screens */
   }
-  
-  .content-container {
-    max-width: 800px;
-    padding: 20px;
+
+  .about-tag {
+    font-size: 0.8rem; /* Slightly smaller font size on tablets */
+    padding: 8px 16px;
   }
-  
-  h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #d8e900; /* Highlighted color for heading */
-    font-weight: bold;
+
+  .heading {
+    font-size: 1.8rem; /* Smaller heading on tablets */
   }
-  
-  .content-container p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 30px;
-    color: beige;
+
+  .hello-text {
+    font-size: 1.1rem;
   }
-  
-  .btn-see-projects {
-    padding: 10px 25px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
+
+  .description {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 20px; /* Extra padding for smaller screens */
+    height: auto; /* Allow content to flow */
+  }
+
+  .about-tag {
+    font-size: 0.7rem; /* Smaller font size on mobile */
+    padding: 6px 12px;
+  }
+
+  .about-content {
+    max-width: 100%; /* Full width for content */
+  }
+
+  .heading {
+    font-size: 1.5rem; /* Smaller heading on mobile */
+  }
+
+  .hello-text {
     font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
-  
-  .btn-see-projects:hover {
-    background-color: #222;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+
+  .description {
+    font-size: 0.9rem;
   }
-  
-  /* Responsive Design */
-  @media screen and (max-width: 768px) {
-    h2 {
-      font-size: 2rem;
-    }
-  
-    p {
-      font-size: 1rem;
-    }
-  
-    .btn-see-projects {
-      padding: 8px 20px;
-      font-size: 0.9rem;
-    }
+}
+
+@media (max-width: 480px) {
+  .about-tag {
+    font-size: 0.6rem; /* Further reduce font size on very small screens */
+    padding: 5px 10px;
   }
-  
-  @media screen and (max-width: 480px) {
-    h2 {
-      font-size: 1.8rem;
-    }
-  
-    p {
-      font-size: 0.9rem;
-    }
-  
-    .btn-see-projects {
-      padding: 6px 16px;
-      font-size: 0.8rem;
-    }
+
+  .about-content {
+    padding: 0 10px; /* Less padding on very small screens */
   }
+
+  .heading {
+    font-size: 1.3rem; /* Reduce heading size even more */
+  }
+
+  .hello-text {
+    font-size: 0.9rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
+  }
+}
+
   
