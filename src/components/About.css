@@ -153,7 +153,7 @@
   }
 
   .heading {
-    font-size: 1.6rem; /* Smaller heading on mobile */
+    font-size: 1.1rem; /* Smaller heading on mobile */
   }
 
   .hello-text {
@@ -177,7 +177,7 @@
   }
 
   .heading {
-    font-size: 1.4rem; /* Reduce heading size even more */
+    font-size: 0.8rem; /* Reduce heading size even more */
   }
 
   .hello-text {
@@ -219,7 +219,7 @@
   }
 
   .heading {
-    font-size: 1.3rem; /* Reduce heading size even more */
+    font-size: 0.7rem; /* Reduce heading size even more */
   }
 
   .hello-text {
@@ -265,7 +265,7 @@
   }
 
   .heading {
-    font-size: 1.2rem; /* Reduce heading size even more */
+    font-size: 0.5rem; /* Reduce heading size even more */
   }
 
   .hello-text {
