@@ -4,10 +4,10 @@ import './skills.css'; // Custom styles
 const skills = [
   { name: 'React Native', experience: '6 Months Experience' },
   { name: 'CSS/HTML', experience: '1.5 Years Experience' },
-  { name: 'NodeJS', experience: '8 Months Experience' },
+  { name: 'NodeJS', experience: '1.5 Years Experience' },
   { name: 'Bootstrap', experience: '1.5 Years Experience' },
-  { name: 'ReactJS', experience: '8 Months Experience' },
-  { name: 'MongoDB', experience: '8 Months Experience' }
+  { name: 'ReactJS', experience: '1.5 Years Experience' },
+  { name: 'MongoDB', experience: '1.5 Years Experience' }
 ];
 
 const Skills = () => {
